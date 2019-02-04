@@ -1,0 +1,122 @@
+[
+	{
+		"team": "Arizona Cardinals",
+		"pickNum": 1
+	},
+	{
+		"team": "San Francisco 49ers",
+		"pickNum": 2
+	},
+	{
+		"team": "New York Jets",
+		"pickNum": 3
+	},
+	{
+		"team": "Oakland Raiders",
+		"pickNum": 4
+	},
+	{
+		"team": "Tampa Bay Buccaneers",
+		"pickNum": 5
+	},
+	{
+		"team": "New York Giants",
+		"pickNum": 6
+	},
+	{
+		"team": "Jacksonville Jaguars",
+		"pickNum": 7
+	},
+	{
+		"team": "Detroit Lions",
+		"pickNum": 8
+	},
+	{
+		"team": "Buffalo Bills",
+		"pickNum": 9
+	},
+	{
+		"team": "Denver Broncos",
+		"pickNum": 10
+	},
+	{
+		"team": "Cincinnati Bengals",
+		"pickNum": 11
+	},
+	{
+		"team": "Green Bay Packers",
+		"pickNum": 12
+	},
+	{
+		"team": "Miami Dolphins",
+		"pickNum": 13
+	},
+	{
+		"team": "Atlanta Falcons",
+		"pickNum": 14
+	},
+	{
+		"team": "Washington Redskins",
+		"pickNum": 15
+	},
+	{
+		"team": "Carolina Panthers",
+		"pickNum": 16
+	},
+	{
+		"team": "Cleveland Browns",
+		"pickNum": 17
+	},
+	{
+		"team": "Minnesota Vikings",
+		"pickNum": 18
+	},
+	{
+		"team": "Tennessee Titans",
+		"pickNum": 19
+	},
+	{
+		"team": "Pittsburgh Steelers",
+		"pickNum": 20
+	},
+	{
+		"team": "Seattle Seahawks",
+		"pickNum": 21
+	},
+	{
+		"team": "Baltimore Ravens",
+		"pickNum": 22
+	},
+	{
+		"team": "Houston Texans",
+		"pickNum": 23
+	},
+	{
+		"team": "Oakland Raiders",
+		"pickNum": 24
+	},
+	{
+		"team": "Philadelphia Eagles",
+		"pickNum": 25
+	},
+	{
+		"team": "Indianapolis Colts",
+		"pickNum": 26
+	},
+	{
+		"team": "Oakland Raiders",
+		"pickNum": 27
+	},
+	{
+		"team": "Los Angeles Chargers",
+		"pickNum": 28
+	},
+	{
+		"team": "Kansas City Chiefs",
+		"pickNum": 29
+	},
+	{
+		"team": "Green Bay Packers",
+		"pickNum": 30
+	}
+]
