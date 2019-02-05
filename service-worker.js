@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/nfl-draft/precache-manifest.7bc578ec50281678900be95649393566.js"
+  "/nfl-draft/precache-manifest.0954697429f5fb46ef2d4562ac0d0cdd.js"
 );
 
 workbox.clientsClaim();
