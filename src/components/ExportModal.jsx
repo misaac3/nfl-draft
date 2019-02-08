@@ -5,9 +5,9 @@ import ReactDOM from 'react-dom'
 import React, { Component } from 'react'
 import ExportedPick from './ExportedPick'
 
-export class Modal extends Component {
+export class ExportModal extends Component {
     copy = () => {
-        console.log('copy button clicked')
+       
 
         window.getSelection().selectAllChildren(document.getElementById('exportedPicks'));
         let isSuccessful = document.execCommand('copy');
@@ -51,7 +51,7 @@ export class Modal extends Component {
                     <div id='exportedPicks'>
                         {/* {this.props.children} */}
                         {this.props.arr.map((p) =>
-                            <ExportedPick a={p} key={p.pick.pickNum}/>
+                            <ExportedPick a={p} key={p.pick.pickNum} />
                         )}
                     </div>
 
@@ -80,9 +80,9 @@ export class Modal extends Component {
 
                 </div>
             </div>,
-            document.querySelector('#modal-root')
+            document.querySelector('#modal-export')
         )
     }
 }
 
-export default Modal
+export default ExportModal

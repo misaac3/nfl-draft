@@ -11,24 +11,28 @@ export class RoundHeader extends Component {
             pickWasSelected: this.props.pickWasSelected,
             teams: this.props.teams,
             teamsToPlayer: this.props.teamsToPlayer,
-            round: this.props.round
+            round: this.props.round,
+            teamToDisplay: 'All'
+
         }
     }
 
 
     componentWillReceiveProps(nextProps) {
-        this.setState({ teams: nextProps.teams, teamsToPlayer: nextProps.teamsToPlayer });
+        let teamToDisplay = nextProps.teamToDisplay !== null ? nextProps.teamToDisplay : null;
+        this.setState({ teams: nextProps.teams, teamsToPlayer: nextProps.teamsToPlayer, teamToDisplay });
     }
 
     render() {
         let { round } = this.state
+
         return (
             <div className="accordion" id="accordionExample">
                 <div className="card  mb-1">
                     <button className="card-header btn" id={"headingOne" + round} data-toggle="collapse" data-target={'#collapse' + round} aria-expanded="true"
                         aria-controls={"collapse" + round}> Round {round} </button>
                     <div
-                        className={"list-group collapse " + (round===1 ? 'show' : '')} id={"collapse" + round} aria-labelledby={"heading" + round} data-parent="#accordionExample"
+                        className={"list-group collapse " + (round === 1 ? 'show' : '')} id={"collapse" + round} aria-labelledby={"heading" + round} data-parent="#accordionExample"
                     >
                         <div
                             className="list-group"
@@ -39,6 +43,11 @@ export class RoundHeader extends Component {
                                 >
                                     {this.state.teams
                                         .filter(p => p.pick.round === this.state.round)
+                                        .filter(p => {
+                                            let { teamToDisplay } = this.state
+                                            if (teamToDisplay === 'All') { return true }
+                                            else { return p.pick.team === teamToDisplay }
+                                        })
                                         .map((p) =>
                                             < Team
                                                 pick={p}

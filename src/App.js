@@ -3,17 +3,22 @@ import './App.css';
 import Header from './components/Header.jsx';
 import Players from './components/Players.jsx';
 import Teams from "./components/Teams.jsx";
-import Modal from "./components/Modal"
+import ExportModal from "./components/ExportModal.jsx";
+import TradeModal from './components/TradeModal.jsx'
+
 // import teamorder from './teamsorder.json';
 import teamorder from './fullteamorder.json';
 
 // import rankings from './bigboard.json';
 import rankings from './Drafttek-Feb3-bigboard.json'
 
+
+
 class App extends Component {
   constructor(props) {
-    super(props);
+
     const teams = teamorder.map(({ team, pickNum, round, pickNumInRound }) => {
+
       return { pick: { team, pickNum, round, pickNumInRound, isSelected: false, isPicked: false, playerPicked: null }, key: pickNum };
     });
 
@@ -21,6 +26,7 @@ class App extends Component {
     teams.forEach(({ pick }) => {
       teamsToPlayer[pick.pickNum - 1] = null;
     });
+    super(props);
 
     const players = rankings.map(({ rank, name, position, school }) => {
       return { player: { rank, name, position, school, isSelected: false, teamDraftedTo: null }, key: rank }
@@ -32,7 +38,8 @@ class App extends Component {
       teamsToPlayer,
       teams,
       players,
-      showModal: false
+      showExportModal: false,
+      showTradeModal: false
     }
   }
 
@@ -111,6 +118,7 @@ class App extends Component {
 
 
       let team = teams[pickNum - 1]
+
       team.pick.isSelected = true;
       teams[pickNum - 1] = team;
       if (this.state.pickSelected != null) {
@@ -125,7 +133,6 @@ class App extends Component {
 
       let players = this.state.players;
       if (this.state.playerSelected) {
-        console.log('both a player and pick are selected')
         team.pick.playerPicked = this.state.playerSelected.player;
         teams[pickNum - 1] = team;
 
@@ -166,73 +173,147 @@ class App extends Component {
 
   }
 
-
   exportToText = () => {
     let ttp = this.state.teamsToPlayer
     let teams = this.state.teams
     let players = this.state.players
 
-    console.log(ttp)
-
-
-    // let str = ''
     let arr = []
     if (ttp) {
 
       ttp.forEach((p, i) => {
 
         if (p) {
-          // let { team, pickNum } = teams[i].pick
-          // let { name, position, school } = players[p].player
-          // let tempStr = 'At pick #' + pickNum + ', the ' + team + ' select ' + name + ', ' + position + ' from ' + school
-          // str += tempStr + '\n'
-          // arr.push(tempStr + '\n')
           arr.push({ pick: teams[i].pick, player: players[p - 1].player })
         }
       })
-      console.log(arr)
     }
     return arr
   }
 
-
-
-  handleShowMessageClick = () => {
-    // let arr = this.exportToText()
-    this.setState({ showModal: !this.stateshowModal })
+  tradeModalClick = () => {
+    // this.tradePicks()
+    this.setState({ showTradeModal: !this.state.showTradeModal })
   }
-  handleCloseModal = () => {
-    this.setState({ showModal: false })
+
+  handleCloseTradeModal = () => {
+    this.setState({ showTradeModal: !this.state.showTradeModal })
+
+  }
+
+  exportModalClick = () => {
+    // let arr = this.exportToText()
+    this.setState({ showExportModal: !this.state.showExportModal })
+  }
+  handleCloseExportModal = () => {
+    this.setState({ showExportModal: false })
     document.querySelector('#copyMessage').style.display = 'none'
+  }
+
+  // tradePicks = () => {
+  //   let { teams } = this.state
+  //   let team1 = teams[0].pick.team
+  //   let team2 = teams[1].pick.team
+
+  //   teams[0].pick.team = team2
+  //   teams[1].pick.team = team1
+
+  //   this.setState({ teams })
+  // }
+
+  executeTrade = (trades, team1, team2) => {
+    let teams = this.state.teams;
+    let ttp = this.state.teamsToPlayer
+
+    let team1Picks = this.state.teams.filter(p => {
+      return ((p.pick.team === team1) && (trades.includes(p.pick.pickNum)))
+    });
+
+
+
+    let team2Picks = this.state.teams.filter(p => {
+      return ((p.pick.team === team2) && (trades.includes(p.pick.pickNum)) && (!team1Picks.includes(p)))
+    })
+
+
+
+    team1Picks.forEach(p => {
+      p.pick.team = team2
+      let { pickNum } = p.pick
+      teams[pickNum - 1] = p
+    })
+
+    team2Picks.forEach(p => {
+      p.pick.team = team1
+      let { pickNum } = p.pick
+      teams[pickNum - 1] = p
+    })
+
+    trades.forEach(pickNum => {
+      ttp[pickNum - 1] = null
+    })
+
+    this.setState({ teams, teamsToPlayer: ttp })
   }
 
   render() {
     return (
-      <div style={{
-        height: '100%',
-      }}
-
+      <div
+        style={{
+          height: '100%'
+        }}
         className="container panel">
 
-        < Header />
-        <button
-          onClick={this.handleShowMessageClick}
-          style={{
-            display: 'grid',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}
-          className='btn-lg btn-success'
-        >
+        {/* <button className='btn btn-primary mb-3' onClick={p => this.tradePicks()}>Click to trade 1st and 2nd pick</button> */}
 
-          Export to Text!
+        < Header />
+        <div className='col-12'>
+          <div className='row'>
+            <button
+              onClick={this.tradeModalClick}
+              style={{
+                display: 'grid',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}
+              className='btn-lg btn-success col-6'
+            >
+              Make A Trade!
           </button>
 
-        {this.state.showModal ? (
-          <Modal onClose={this.handleCloseModal} arr={this.exportToText()}>
-          </Modal>
-        ) : null}
+            {this.state.showTradeModal ? (
+              <TradeModal
+                executeTrade={this.executeTrade}
+                pickWasSelected={this.pickWasSelected}
+                teams={this.state.teams}
+                players={this.state.players}
+                teamsToPlayer={this.state.teamsToPlayer}
+                onClose={this.handleCloseTradeModal} arr={this.exportToText()}>
+              </TradeModal>
+            ) : null}
 
+            <button
+              onClick={this.exportModalClick}
+              style={{
+                display: 'grid',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}
+              className='btn-lg btn-success col-6'
+            >
+
+              Export to Text!
+          </button>
+
+            {this.state.showExportModal ? (
+              <ExportModal
+
+                onClose={this.handleCloseExportModal}
+                arr={this.exportToText()}>
+              </ExportModal>
+            ) : null}
+          </div>
+        </div>
         <br />
         <div className="container">
           <div className="row" style={{ position: 'relative' }}>

@@ -8,14 +8,15 @@ export class Team extends Component {
 
         const { pick } = this.props.pick
         this.state = {
-            pick, playerPicked: this.props.playerPicked, pickWasSelected: this.props.pickWasSelected
+            pick, playerPicked: this.props.playerPicked, pickWasSelected: this.props.pickWasSelected, forTrade: this.props.forTrade
         }
     }
 
     clicked = (pick) => {
-        console.log('team clicked')
-        this.state.pickWasSelected(pick)
-            
+        //TODO Forfeited picks (giants)
+        if (pick.pickNum !== 71) {
+            this.state.pickWasSelected(pick)
+        }
     }
 
     componentWillReceiveProps(nextProps) {
@@ -24,23 +25,24 @@ export class Team extends Component {
     }
 
     render() {
+
         return (
             <div>
                 <li
-                    className="list-group-item"
+                    className={this.state.forTrade ? "list-group-item" : "list-group-item text-sm-left py-3"}
                     onClick={this.clicked.bind(this, this.state.pick)}
                     style={{
                         backgroundColor: this.state.pick.isSelected ? '#37BC9B' : 'white'
                     }}
                 >
 
-                    {/* <h4> <img src={ATL} alt='ARZ' width="10%" height='10%' /> {this.state.pick.team}</h4> */}
-                    <h4> {this.state.pick.team}</h4>
+                    <h5> {this.state.pick.team}</h5>
                     Round {this.state.pick.round}, Pick {this.state.pick.pickNumInRound}
                     <br />
                     Pick # {this.state.pick.pickNum}
                     <br />
                     {this.state.playerPicked ? this.state.playerPicked.player.name : null}
+                    {this.state.pick.pickNum === 71 ? <b>(Forfieted)</b> : null}
 
                 </li>
 

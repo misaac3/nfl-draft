@@ -5,7 +5,7 @@ export class ExportedPick extends Component {
         let { player, pick } = this.props.a
         return (
             <div>
-                R{pick.round} P{pick.pickNumInRound}, (Pick {pick.pickNum}) <b>{pick.team}</b> : {player.name}, {player.position}
+                {pick.pickNum}): R{pick.round} P{pick.pickNumInRound},  <b>{pick.team}</b> : {player.name}, {player.position}
             </div>
         )
     }

@@ -180,13 +180,13 @@
         "pickNumInRound": 30
     },
     {
-        "team": "New England Patriots",
+        "team": "Los Angeles Rams",
         "pickNum": 31,
         "round": 1,
         "pickNumInRound": 31
     },
     {
-        "team": "Los Angeles Rams",
+        "team": "New England Patriots",
         "pickNum": 32,
         "round": 1,
         "pickNumInRound": 32
@@ -372,13 +372,13 @@
         "pickNumInRound": 30
     },
     {
-        "team": "New England Patriots",
+        "team": "Kansas City Chiefs",
         "pickNum": 63,
         "round": 2,
         "pickNumInRound": 31
     },
     {
-        "team": "Kansas City Chiefs",
+        "team": "New England Patriots",
         "pickNum": 64,
         "round": 2,
         "pickNumInRound": 32
@@ -418,6 +418,12 @@
         "pickNum": 70,
         "round": 3,
         "pickNumInRound": 6
+    },
+    {
+        "team": "New York Giants",
+        "pickNum": 71,
+        "round": 3,
+        "pickNumInRound": 7
     },
     {
         "team": "Denver Broncos",
@@ -558,13 +564,13 @@
         "pickNumInRound": 30
     },
     {
-        "team": "Cleveland Browns",
+        "team": "Jacksonville Jaguars",
         "pickNum": 95,
         "round": 3,
         "pickNumInRound": 31
     },
     {
-        "team": "Jacksonville Jaguars",
+        "team": "Cleveland Browns",
         "pickNum": 96,
         "round": 3,
         "pickNumInRound": 32
