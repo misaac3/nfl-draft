@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "9204fc416e43277f0288",
+    "revision": "65ffd4601ad67cf595f4",
     "url": "/nfl-draft/static/css/main.9480e206.chunk.css"
   },
   {
-    "revision": "9204fc416e43277f0288",
-    "url": "/nfl-draft/static/js/main.9204fc41.chunk.js"
+    "revision": "65ffd4601ad67cf595f4",
+    "url": "/nfl-draft/static/js/main.65ffd460.chunk.js"
   },
   {
     "revision": "2ab82b7c22f25e4b2a88",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/nfl-draft/static/js/runtime~main.f2116118.js"
   },
   {
-    "revision": "017e11918deaf4fec9d46b14639052be",
+    "revision": "297d517424076e85804cf9d8a6e9dad5",
     "url": "/nfl-draft/index.html"
   }
 ];
