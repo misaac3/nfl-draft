@@ -8,14 +8,15 @@ export class Players extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            onRightClick: this.props.onRightClick,
             players: this.props.players,
             playerWasSelected: this.props.playerWasSelected,
             teams: this.props.teams,
             teamsToPlayer: this.props.teamsToPlayer,
             positionFilter: Array.from(new Set(this.props.players.map(p => p.player.position))),
             uniquePositions: Array.from(new Set(this.props.players.map(p => p.player.position))).sort(),
-            hideDrafted: true
-
+            hideDrafted: true,
+            userCanPick: this.props.userCanPick
         };
     }
 
@@ -102,11 +103,13 @@ export class Players extends Component {
                         })
                             .map((p) =>
                                 < Player
+
+                                    userCanPick={this.state.userCanPick}
+                                    onRightClick={this.state.onRightClick}
                                     playerWasSelected={this.state.playerWasSelected}
                                     player={p.player}
                                     teamDraftedTo={
-                                        this.state.teams[
-                                        this.state.teamsToPlayer.indexOf(p.key)]
+                                        this.state.teams[this.state.teamsToPlayer.indexOf(p.key)]
                                     }
                                     key={p.player.rank}
                                     isPicked={(this.state.teamsToPlayer.includes(p.key))}

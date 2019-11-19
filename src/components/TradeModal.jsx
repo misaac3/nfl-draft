@@ -21,9 +21,16 @@ export class TradeModal extends Component {
 
     executeTrade = () => {
         let { trades, team1, team2 } = this.state
-        document.querySelector('#tradeMessage').style.display = 'block'
-        this.state.executeTrade(trades, team1, team2)
 
+        if (team1 !== null && team2 !== null && team1 !== team2) {
+            document.querySelector('#tradeFail').style.display = 'none'
+            document.querySelector('#tradeSuccess').style.display = 'block'
+            this.state.executeTrade(trades, team1, team2)
+        }
+        else {
+            document.querySelector('#tradeSuccess').style.display = 'none'
+            document.querySelector('#tradeFail').style.display = 'block'
+        }
     }
 
     handleSelectChange = (e, teamNum) => {
@@ -151,9 +158,9 @@ export class TradeModal extends Component {
                                             .map(p => {
                                                 let { pickNum, round, pickNumInRound } = this.state.teams[p - 1].pick
                                                 return (
-                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                    <li className="list-group-item d-flex justify-content-between align-items-center">
                                                         {pickNum}, R{round}, P{pickNumInRound}
-                                                        <span class="badge badge-primary badge-pill float-right">Value: {tradevalues[pickNum - 1]}</span>
+                                                        <span className="badge badge-primary badge-pill float-right">Value: {tradevalues[pickNum - 1]}</span>
                                                     </li>)
                                             })}
                                         <li className="list-group-item d-flex justify-content-between align-items-center">
@@ -225,10 +232,18 @@ export class TradeModal extends Component {
                     </div>
                     <br />
                     <div
+                        className="alert alert-success"
                         style={{ display: 'none' }}
-                        id='tradeMessage'>
-                        Trade Executed
+                        id='tradeSuccess'>
+                        Trade Executed!
                     </div>
+                    <div
+                        className="alert alert-danger"
+                        style={{ display: 'none' }}
+                        id='tradeFail'>
+                        Make sure there are two teams selected!
+                    </div>
+
 
                     <hr />
                     <div>

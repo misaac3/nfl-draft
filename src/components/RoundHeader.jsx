@@ -12,7 +12,9 @@ export class RoundHeader extends Component {
             teams: this.props.teams,
             teamsToPlayer: this.props.teamsToPlayer,
             round: this.props.round,
-            teamToDisplay: 'All'
+            teamToDisplay: 'All',
+            userCanPick: this.props.userCanPick
+
 
         }
     }
@@ -50,6 +52,8 @@ export class RoundHeader extends Component {
                                         })
                                         .map((p) =>
                                             < Team
+
+                                                userCanPick={this.state.userCanPick}
                                                 pick={p}
                                                 playerPicked={
                                                     this.state.players[this.state.teamsToPlayer[(p.key) - 1] - 1]

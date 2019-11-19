@@ -1,0 +1,782 @@
+{
+    "New England Patriots": {
+        "top": [],
+        "primary": [
+            "EDGE",
+            "DL",
+            "WR"
+        ],
+        "secondary": [
+            "TE",
+            "CB",
+            "LB"
+        ],
+        "tertiary": [
+            "QB",
+            "S"
+        ],
+        "none": [
+            "OT",
+            "G",
+            "C",
+            "RB"
+        ],
+        "picked": []
+    },
+    "Buffalo Bills": {
+        "top": [],
+        "primary": [
+            "WR",
+            "OT",
+            "G",
+            "C",
+            "DL",
+            "EDGE"
+        ],
+        "secondary": [
+            "CB",
+            "RB",
+            "TE"
+        ],
+        "tertiary": [
+            "LB"
+        ],
+        "none": [
+            "S",
+            "QB"
+        ],
+        "picked": []
+    },
+    "New York Jets": {
+        "top": [],
+        "primary": [
+            "EDGE",
+            "OT",
+            "WR",
+            "G",
+            "C"
+        ],
+        "secondary": [
+            "RB",
+            "LB"
+        ],
+        "tertiary": [
+            "DL",
+            "CB",
+            "TE"
+        ],
+        "none": [
+            "QB",
+            "S"
+        ],
+        "picked": []
+    },
+    "Miami Dolphins": {
+        "top": [],
+        "primary": [
+            "QB",
+            "EDGE",
+            "G",
+            "C"
+        ],
+        "secondary": [
+            "WR",
+            "CB",
+            "LB"
+        ],
+        "tertiary": [
+            "DL",
+            "S",
+            "RB",
+            "TE"
+        ],
+        "none": [
+            "OT"
+        ],
+        "picked": []
+    },
+    "Pittsburgh Steelers": {
+        "top": [],
+        "primary": [
+            "CB",
+            "LB",
+            "EDGE"
+        ],
+        "secondary": [
+            "WR",
+            "CB",
+            "S",
+            "G",
+            "C"
+        ],
+        "tertiary": [
+            "DL",
+            "TE",
+            "OT",
+            "RB"
+        ],
+        "none": [
+            "QB"
+        ],
+        "picked": []
+    },
+    "Cincinnati Bengals": {
+        "top": [],
+        "primary": [
+            "LB",
+            "OT",
+            "G",
+            "C"
+        ],
+        "secondary": [
+            "QB",
+            "TE",
+            "CB"
+        ],
+        "tertiary": [
+            "WR",
+            "DL",
+            "S"
+        ],
+        "none": [
+            "RB",
+            "EDGE"
+        ],
+        "picked": []
+    },
+    "Baltimore Ravens": {
+        "top": [],
+        "primary": [
+            "WR",
+            "G",
+            "C",
+            "S"
+        ],
+        "secondary": [
+            "WR",
+            "LB",
+            "EDGE"
+        ],
+        "tertiary": [
+            "DL",
+            "RB"
+        ],
+        "none": [
+            "CB",
+            "OT",
+            "QB",
+            "TE"
+        ],
+        "picked": []
+    },
+    "Cleveland Browns": {
+        "top": [],
+        "primary": [
+            "CB",
+            "DL",
+            "LB"
+        ],
+        "secondary": [
+            "WR",
+            "OT",
+            "EDGE"
+        ],
+        "tertiary": [
+            "TE",
+            "S"
+        ],
+        "none": [
+            "G",
+            "C",
+            "QB",
+            "RB"
+        ],
+        "picked": []
+    },
+    "Indianapolis Colts": {
+        "top": [],
+        "primary": [
+            "DL",
+            "WR",
+            "S",
+            "CB"
+        ],
+        "secondary": [
+            "EDGE",
+            "LB"
+        ],
+        "tertiary": [
+            "WR",
+            "OT",
+            "G",
+            "C",
+            "TE"
+        ],
+        "none": [
+            "RB",
+            "QB"
+        ],
+        "picked": []
+    },
+    "Houston Texans": {
+        "top": [],
+        "primary": [
+            "OT",
+            "G",
+            "C",
+            "CB"
+        ],
+        "secondary": [
+            "OT",
+            "G",
+            "C",
+            "S",
+            "TE"
+        ],
+        "tertiary": [
+            "RB",
+            "EDGE",
+            "DL"
+        ],
+        "none": [
+            "LB",
+            "WR",
+            "QB"
+        ],
+        "picked": []
+    },
+    "Tennessee Titans": {
+        "top": [],
+        "primary": [
+            "EDGE",
+            "WR",
+            "G",
+            "C"
+        ],
+        "secondary": [
+            "CB",
+            "DL",
+            "TE"
+        ],
+        "tertiary": [
+            "G",
+            "C",
+            "QB",
+            "S"
+        ],
+        "none": [
+            "OT",
+            "RB",
+            "LB"
+        ],
+        "picked": []
+    },
+    "Jacksonville Jaguars": {
+        "top": [],
+        "primary": [
+            "QB",
+            "TE",
+            "EDGE"
+        ],
+        "secondary": [
+            "WR",
+            "G",
+            "C",
+            "S"
+        ],
+        "tertiary": [
+            "CB",
+            "OT"
+        ],
+        "none": [
+            "DL",
+            "LB",
+            "RB"
+        ],
+        "picked": []
+    },
+    "Kansas City Chiefs": {
+        "top": [],
+        "primary": [
+            "CB",
+            "S",
+            "LB"
+        ],
+        "secondary": [
+            "EDGE",
+            "CB",
+            "RB",
+            "DL"
+        ],
+        "tertiary": [
+            "WR",
+            "G",
+            "C"
+        ],
+        "none": [
+            "QB",
+            "TE",
+            "OT"
+        ],
+        "picked": []
+    },
+    "Los Angeles Chargers": {
+        "top": [],
+        "primary": [
+            "OT",
+            "DL",
+            "LB"
+        ],
+        "secondary": [
+            "CB",
+            "WR",
+            "G",
+            "C"
+        ],
+        "tertiary": [
+            "QB",
+            "TE"
+        ],
+        "none": [
+            "S",
+            "EDGE",
+            "RB"
+        ],
+        "picked": []
+    },
+    "Denver Broncos": {
+        "top": [],
+        "primary": [
+            "QB",
+            "CB",
+            "OT",
+            "DL"
+        ],
+        "secondary": [
+            "TE",
+            "G",
+            "C",
+            "WR"
+        ],
+        "tertiary": [
+            "S",
+            "LB",
+            "EDGE"
+        ],
+        "none": [
+            "RB"
+        ],
+        "picked": []
+    },
+    "Oakland Raiders": {
+        "top": [],
+        "primary": [
+            "EDGE",
+            "CB",
+            "WR",
+            "S",
+            "LB"
+        ],
+        "secondary": [
+            "WR",
+            "RB",
+            "TE",
+            "QB"
+        ],
+        "tertiary": [
+            "DL",
+            "OT",
+            "G",
+            "C"
+        ],
+        "none": [],
+        "picked": []
+    },
+    "Philadelphia Eagles": {
+        "top": [],
+        "primary": [
+            "DL",
+            "EDGE",
+            "S"
+        ],
+        "secondary": [
+            "OT",
+            "RB",
+            "LB",
+            "WR"
+        ],
+        "tertiary": [
+            "G",
+            "C",
+            "CB"
+        ],
+        "none": [
+            "QB",
+            "TE"
+        ],
+        "picked": []
+    },
+    "Washington Redskins": {
+        "top": [],
+        "primary": [
+            "WR",
+            "G",
+            "C",
+            "S",
+            "EDGE"
+        ],
+        "secondary": [
+            "QB",
+            "LB",
+            "CB",
+            "TE"
+        ],
+        "tertiary": [
+            "DL"
+        ],
+        "none": [
+            "OT",
+            "RB"
+        ],
+        "picked": []
+    },
+    "Dallas Cowboys": {
+        "top": [],
+        "primary": [
+            "S",
+            "DL",
+            "TE"
+        ],
+        "secondary": [
+            "WR",
+            "EDGE",
+            "CB"
+        ],
+        "tertiary": [
+            "RB",
+            "LB",
+            "OT"
+        ],
+        "none": [
+            "G",
+            "C",
+            "QB"
+        ],
+        "picked": []
+    },
+    "New York Giants": {
+        "top": [],
+        "primary": [
+            "OT",
+            "EDGE",
+            "QB",
+            "CB",
+            "G",
+            "C"
+        ],
+        "secondary": [
+            "LB",
+            "S"
+        ],
+        "tertiary": [
+            "WR",
+            "DL"
+        ],
+        "none": [
+            "RB",
+            "TE"
+        ],
+        "picked": []
+    },
+    "Green Bay Packers": {
+        "top": [],
+        "primary": [
+            "S",
+            "EDGE",
+            "TE",
+            "G",
+            "C"
+        ],
+        "secondary": [
+            "WR",
+            "OT",
+            "LB"
+        ],
+        "tertiary": [
+            "DL"
+        ],
+        "none": [
+            "QB",
+            "CB",
+            "RB"
+        ],
+        "picked": []
+    },
+    "Minnesota Vikings": {
+        "top": [],
+        "primary": [
+            "G",
+            "C",
+            "OT",
+            "LB"
+        ],
+        "secondary": [
+            "TE",
+            "WR"
+        ],
+        "tertiary": [
+            "DL",
+            "S",
+            "EDGE"
+        ],
+        "none": [
+            "QB",
+            "CB",
+            "RB"
+        ],
+        "picked": []
+    },
+    "Chicago Bears": {
+        "top": [],
+        "primary": [
+            "CB",
+            "OT",
+            "S"
+        ],
+        "secondary": [
+            "EDGE",
+            "G",
+            "C"
+        ],
+        "tertiary": [
+            "RB",
+            "LB"
+        ],
+        "none": [
+            "WR",
+            "TE",
+            "QB",
+            "DL"
+        ],
+        "picked": []
+    },
+    "Detroit Lions": {
+        "top": [],
+        "primary": [
+            "EDGE",
+            "CB",
+            "TE"
+        ],
+        "secondary": [
+            "WR",
+            "S",
+            "LB",
+            "DL"
+        ],
+        "tertiary": [
+            "G",
+            "C"
+        ],
+        "none": [
+            "RB",
+            "OT",
+            "QB"
+        ],
+        "picked": []
+    },
+    "New Orleans Saints": {
+        "top": [],
+        "primary": [
+            "TE",
+            "WR",
+            "CB"
+        ],
+        "secondary": [
+            "LB",
+            "QB",
+            "DL",
+            "RB"
+        ],
+        "tertiary": [
+            "G",
+            "C",
+            "S"
+        ],
+        "none": [
+            "EDGE",
+            "OT"
+        ],
+        "picked": []
+    },
+    "Carolina Panthers": {
+        "top": [],
+        "primary": [
+            "EDGE",
+            "OT",
+            "S",
+            "G",
+            "C"
+        ],
+        "secondary": [
+            "EDGE",
+            "G",
+            "C",
+            "WR"
+        ],
+        "tertiary": [
+            "DL",
+            "RB",
+            "TE",
+            "LB",
+            "CB"
+        ],
+        "none": [
+            "QB"
+        ],
+        "picked": []
+    },
+    "Atlanta Falcons": {
+        "top": [],
+        "primary": [
+            "DL",
+            "G",
+            "C",
+            "EDGE"
+        ],
+        "secondary": [
+            "OT",
+            "LB",
+            "RB"
+        ],
+        "tertiary": [
+            "CB",
+            "TE"
+        ],
+        "none": [
+            "WR",
+            "S",
+            "QB"
+        ],
+        "picked": []
+    },
+    "Tampa Bay Buccaneers": {
+        "top": [],
+        "primary": [
+            "OT",
+            "DL",
+            "CB"
+        ],
+        "secondary": [
+            "EDGE",
+            "RB",
+            "G",
+            "C",
+            "LB"
+        ],
+        "tertiary": [
+            "S",
+            "QB"
+        ],
+        "none": [
+            "WR",
+            "TE"
+        ],
+        "picked": []
+    },
+    "Los Angeles Rams": {
+        "top": [],
+        "primary": [
+            "EDGE",
+            "CB",
+            "LB"
+        ],
+        "secondary": [
+            "S",
+            "G",
+            "C"
+        ],
+        "tertiary": [
+            "TE",
+            "OT",
+            "DL"
+        ],
+        "none": [
+            "QB",
+            "WR",
+            "RB"
+        ],
+        "picked": []
+    },
+    "Seattle Seahawks": {
+        "top": [],
+        "primary": [
+            "S",
+            "EDGE",
+            "CB"
+        ],
+        "secondary": [
+            "G",
+            "C",
+            "DL",
+            "WR"
+        ],
+        "tertiary": [
+            "TE",
+            "OT",
+            "LB"
+        ],
+        "none": [
+            "QB",
+            "RB"
+        ],
+        "picked": []
+    },
+    "San Francisco 49ers": {
+        "top": [],
+        "primary": [
+            "EDGE",
+            "CB",
+            "S",
+            "WR"
+        ],
+        "secondary": [
+            "G",
+            "C",
+            "DL"
+        ],
+        "tertiary": [
+            "TE",
+            "OT",
+            "LB"
+        ],
+        "none": [
+            "QB",
+            "RB"
+        ],
+        "picked": []
+    },
+    "Arizona Cardinals": {
+        "top": [],
+        "primary": [
+            "OT",
+            "G",
+            "C",
+            "DL",
+            "EDGE",
+            "CB",
+            "WR"
+        ],
+        "secondary": [
+            "LB",
+            "TE"
+        ],
+        "tertiary": [
+            "S"
+        ],
+        "none": [
+            "QB",
+            "RB"
+        ],
+        "picked": []
+    }
+}

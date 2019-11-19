@@ -48,9 +48,9 @@
         "rank": 8
     },
     {
-        "name": "Greg Little",
+        "name": "Jonah Williams",
         "position": "OT",
-        "school": "Ole Miss",
+        "school": "Alabama",
         "rank": 9
     },
     {
@@ -66,15 +66,15 @@
         "rank": 11
     },
     {
-        "name": "Jonah Williams",
+        "name": "Greg Little",
         "position": "OT",
-        "school": "Alabama",
+        "school": "Ole Miss",
         "rank": 12
     },
     {
-        "name": "Trayvon Mullen",
+        "name": "Byron Murphy",
         "position": "CB",
-        "school": "Clemson",
+        "school": "Washington",
         "rank": 13
     },
     {
@@ -108,9 +108,9 @@
         "rank": 18
     },
     {
-        "name": "Byron Murphy",
+        "name": "DeAndre Baker",
         "position": "CB",
-        "school": "Washington",
+        "school": "Georgia",
         "rank": 19
     },
     {
@@ -127,7 +127,7 @@
     },
     {
         "name": "Rashan Gary",
-        "position": "DL",
+        "position": "EDGE",
         "school": "Michigan",
         "rank": 22
     },
@@ -162,9 +162,9 @@
         "rank": 27
     },
     {
-        "name": "DeAndre Baker",
+        "name": "Trayvon Mullen",
         "position": "CB",
-        "school": "Georgia",
+        "school": "Clemson",
         "rank": 28
     },
     {
@@ -240,9 +240,9 @@
         "rank": 40
     },
     {
-        "name": "Martez Ivey",
+        "name": "Cody Ford",
         "position": "G",
-        "school": "Florida",
+        "school": "Oklahoma",
         "rank": 41
     },
     {
@@ -618,9 +618,9 @@
         "rank": 103
     },
     {
-        "name": "Cody Ford",
+        "name": "Martez Ivey",
         "position": "G",
-        "school": "Oklahoma",
+        "school": "Florida",
         "rank": 104
     },
     {

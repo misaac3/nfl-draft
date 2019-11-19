@@ -19,7 +19,13 @@ export class Teams extends Component {
       teams: this.props.teams,
       teamsToPlayer: this.props.teamsToPlayer,
       rounds: Array.from(new Set(this.props.teams.map(p => p.pick.round))),
-      teamToDisplay: 'All'
+      teamToDisplay: 'All',
+      userCanPick: this.props.userCanPick,
+
+      teamForDraftSimMode: this.props.teamForDraftSimMode,
+      playersChosenByUser: this.props.playersChosenByUser
+
+
     }
 
   }
@@ -35,8 +41,15 @@ export class Teams extends Component {
   }
 
   render() {
+    // console.log(this.props.teamForDraftSimMode)
     return (
       <div className={this.state.forTrade ? 'col-12' : 'col-6 text-small'}>
+        <div>
+          <b>{this.props.teamForDraftSimMode}</b>
+        </div>
+        {this.state.playersChosenByUser.map(p => {
+          return (<div>{p.name}, {p.position}, {p.school},</div>)
+        })}
         {this.state.forTrade ? null : <TeamSelect onSelectChange={this.onSelectChange} />}
 
         {this.state.rounds.map(round =>

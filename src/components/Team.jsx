@@ -8,13 +8,18 @@ export class Team extends Component {
 
         const { pick } = this.props.pick
         this.state = {
-            pick, playerPicked: this.props.playerPicked, pickWasSelected: this.props.pickWasSelected, forTrade: this.props.forTrade
+            pick,
+            playerPicked: null,
+            pickWasSelected: this.props.pickWasSelected,
+            forTrade: this.props.forTrade,
+            userCanPick: this.props.userCanPick
+
         }
     }
 
     clicked = (pick) => {
         //TODO Forfeited picks (giants)
-        if (pick.pickNum !== 71) {
+        if (this.state.pick.pickNum !== '71') {
             this.state.pickWasSelected(pick)
         }
     }
@@ -24,15 +29,20 @@ export class Team extends Component {
         this.setState({ pick, playerPicked: nextProps.playerPicked })
     }
 
-    render() {
+    nothing = () => {
 
+    }
+
+    render() {
+        let backgroundColor = this.state.pick.isSelected ? '#37BC9B' : 'white'
+        backgroundColor = this.state.playerPicked ? '#D3D3D3' : backgroundColor
         return (
             <div>
                 <li
                     className={this.state.forTrade ? "list-group-item" : "list-group-item text-sm-left py-3"}
                     onClick={this.clicked.bind(this, this.state.pick)}
                     style={{
-                        backgroundColor: this.state.pick.isSelected ? '#37BC9B' : 'white'
+                        backgroundColor
                     }}
                 >
 
@@ -41,9 +51,8 @@ export class Team extends Component {
                     <br />
                     Pick # {this.state.pick.pickNum}
                     <br />
-                    {this.state.playerPicked ? this.state.playerPicked.player.name : null}
-                    {this.state.pick.pickNum === 71 ? <b>(Forfieted)</b> : null}
-
+                    {this.state.playerPicked ? this.state.playerPicked.player.name + ', ' + this.state.playerPicked.player.position : null}
+                    {this.state.pick.pickNum === '71' ? <div><b>(Forfieted)</b> Sam Beal, CB</div> : null}
                 </li>
 
             </div>

@@ -15,13 +15,13 @@ export class TeamSelect extends Component {
 
         return (
             <div className="form-group form">
-                {this.state.forTrade ? null : <label forhtml="teamSelect">Select the Team to display</label>}
+                {/* {this.state.forTrade ? null : <label forhtml="teamSelect">Select the Team to display</label>} */}
                 <select
                     className="form-control"
                     id={this.state.tradeTeam ? 'teamSelect' + this.state.tradeTeam : "teamSelect"}
                     onChange={this.state.onSelectChange}>
 
-                    {this.state.forTrade ? <option value='Select'>Select a Team</option> : <option value='All'>All</option>}
+                    {this.state.forTrade ? <option value='Select'>Select a Team</option> : <option value='All'>Select a Team to View Their Picks</option>}
                     <option value='Arizona Cardinals'>Arizona Cardinals</option>
                     <option value='Atlanta Falcons'>Atlanta Falcons</option>
                     <option value='Baltimore Ravens'>Baltimore Ravens</option>
