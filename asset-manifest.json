@@ -1,7 +1,7 @@
 {
   "main.css": "/nfl-draft/static/css/main.e3ca02d9.chunk.css",
-  "main.js": "/nfl-draft/static/js/main.4178de5c.chunk.js",
-  "main.js.map": "/nfl-draft/static/js/main.4178de5c.chunk.js.map",
+  "main.js": "/nfl-draft/static/js/main.96f80e82.chunk.js",
+  "main.js.map": "/nfl-draft/static/js/main.96f80e82.chunk.js.map",
   "static/css/1.72c93660.chunk.css": "/nfl-draft/static/css/1.72c93660.chunk.css",
   "static/js/1.d9e26b80.chunk.js": "/nfl-draft/static/js/1.d9e26b80.chunk.js",
   "static/js/1.d9e26b80.chunk.js.map": "/nfl-draft/static/js/1.d9e26b80.chunk.js.map",
@@ -10,6 +10,6 @@
   "static/css/main.e3ca02d9.chunk.css.map": "/nfl-draft/static/css/main.e3ca02d9.chunk.css.map",
   "static/css/1.72c93660.chunk.css.map": "/nfl-draft/static/css/1.72c93660.chunk.css.map",
   "index.html": "/nfl-draft/index.html",
-  "precache-manifest.483ba2e2938b7c6e2f8518d4f3e0c81e.js": "/nfl-draft/precache-manifest.483ba2e2938b7c6e2f8518d4f3e0c81e.js",
+  "precache-manifest.defdccd0d80ef55b1ea7b6516e3d15a5.js": "/nfl-draft/precache-manifest.defdccd0d80ef55b1ea7b6516e3d15a5.js",
   "service-worker.js": "/nfl-draft/service-worker.js"
 }
